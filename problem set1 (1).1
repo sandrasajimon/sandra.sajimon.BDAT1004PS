@@ -1,0 +1,442 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "3855da76",
+   "metadata": {},
+   "source": [
+    "# Q1\n",
+    "a 5 = 5 is an integer belongs to class 'int'\n",
+    "b 5.0 = 5.0 is a float or a floating point\n",
+    "c 5>1 = it is belonged in class boolean which express either true or false values\n",
+    "d '5' = since it is in quotes, this data type is a string\n",
+    "e 5*2 = it is an integer\n",
+    "f '5'*2 = it is a string\n",
+    "g '5'+'2'= it is a string type\n",
+    "h 5/2 = it is a float\n",
+    "i 5%2 = type is an integer or int\n",
+    "j {5,2,1} = it is a set\n",
+    "k 5==3 = boolean type\n",
+    "l pi(the number) = it is float \n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "a26bd5f0",
+   "metadata": {
+    "scrolled": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n",
+      "<class 'float'>\n",
+      "<class 'bool'>\n",
+      "<class 'str'>\n",
+      "<class 'int'>\n",
+      "<class 'str'>\n",
+      "<class 'str'>\n",
+      "<class 'float'>\n",
+      "<class 'int'>\n",
+      "<class 'set'>\n",
+      "<class 'bool'>\n",
+      "<class 'float'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(5))\n",
+    "print(type(5.0))\n",
+    "print(type(5>1))\n",
+    "print(type('5'))\n",
+    "print(type(5*2))\n",
+    "print(type('5'*2))\n",
+    "print(type('5'+'2'))\n",
+    "print(type(5/2))\n",
+    "print(type(5%2))\n",
+    "print(type({5,2,1}))\n",
+    "print(type(5==3))\n",
+    "import math\n",
+    "print(type(math.pi))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e32cec3e",
+   "metadata": {},
+   "source": [
+    "# Q2\n",
+    "a letters are there in 'Supercalifragilisticexpialidocious'? 34\n",
+    "b Does 'Supercalifragilisticexpialidocious' contain 'ice' as a substring? yes.\n",
+    "c Which of the following words is the longest: Supercalifragilisticexpialidocious, Honorificabilitudinitatibus, or   Bababadalgharaghtakamminarronnkonn? both Supercalifragilisticexpialidocious and Bababadalgharaghtakamminarronnkonn are longest and have same length 34.\n",
+    "d Which composer comes first in the dictionary: 'Berlioz', 'Borodin', 'Brian', 'Bartok', 'Bellini', 'Buxtehude', 'Bernstein'. Which one comes last?Bartok comes first and Buxtehude  comes last.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "9794129b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "34\n",
+      "ice\n",
+      "27\n",
+      "34\n",
+      "Buxtehude\n",
+      "Bartok\n"
+     ]
+    }
+   ],
+   "source": [
+    "h='Supercalifragilisticexpialidocious'\n",
+    "print(len(h))\n",
+    "print(h[18:21])\n",
+    "print(len('Honorificabilitudinitatibus'))\n",
+    "print(len('Bababadalgharaghtakamminarronnkonn'))\n",
+    "a= 'Berlioz'\n",
+    "b= 'Borodin'\n",
+    "c= 'Brian'\n",
+    "d= 'Bartok'\n",
+    "e= 'Bellini'\n",
+    "f= 'Buxtehude'\n",
+    "g= 'Bernstein'\n",
+    "words=[a,b,c,d,e,f,g]\n",
+    "print(max(words))\n",
+    "print(min(words))\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "62f688d8",
+   "metadata": {},
+   "source": [
+    "# "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cc35ddcb",
+   "metadata": {},
+   "source": [
+    "# Q3\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "6aa381e8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1.7320508075688772\n"
+     ]
+    }
+   ],
+   "source": [
+    "def TriangleArea(p,q,r):\n",
+    "   s=(p+q+r)/2\n",
+    "   import math\n",
+    "   area = math.sqrt(s*(s-p)*(s-q)*(s-r))\n",
+    "   return area\n",
+    "\n",
+    "print(TriangleArea(2,2,2))\n",
+    " \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cec681bd",
+   "metadata": {},
+   "source": [
+    "# Q4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "5c957e62",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The Even elements are: [42, 56, 32]\n",
+      "The Odd elements are: [25, 47]\n"
+     ]
+    }
+   ],
+   "source": [
+    "array =[25,47,42,56,32]\n",
+    "even_numbers=[]\n",
+    "odd_numbers=[]\n",
+    "for n in array:\n",
+    "    if n % 2==0:\n",
+    "        even_numbers.append(n)\n",
+    "    else:\n",
+    "        odd_numbers.append(n)\n",
+    "print('The Even elements are:',even_numbers)\n",
+    "print('The Odd elements are:',odd_numbers)\n",
+    "   "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c9e1eba7",
+   "metadata": {},
+   "source": [
+    "# Q5 "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "a5c507a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "False\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "def inside(x,y,x1,y1,x2,y2):\n",
+    "    if (x1<=x<=x2) & (y1<=y<=y2):\n",
+    "        print('True')\n",
+    "    else:\n",
+    "        print('False')\n",
+    "(inside(1,1,0,0,2,3))\n",
+    "(inside(-1,-1,0,0,2,3))\n",
+    "(inside(0.3,0.5,1,1,1.1,0.7))\n",
+    "(inside(0.5,0.2,1,1,1.1,2))\n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f013fb56",
+   "metadata": {},
+   "source": [
+    "# Q6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "8eca3340",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "appyhay\n",
+      "enterway\n"
+     ]
+    }
+   ],
+   "source": [
+    "def pig(word):\n",
+    "    vowels='aeiou'\n",
+    "    word=word.lower()\n",
+    "    if word[0] in vowels:\n",
+    "        print(word+'way')\n",
+    "    else:\n",
+    "        print(word[1:]+word[0]+'ay')\n",
+    "pig('happy')\n",
+    "pig('Enter')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6be759e2",
+   "metadata": {},
+   "source": [
+    "# Q7 "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "d6fda55a",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "cannot assign to function call (3452227366.py, line 4)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[39], line 4\u001b[1;36m\u001b[0m\n\u001b[1;33m    for bldcount.items():\u001b[0m\n\u001b[1;37m        ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m cannot assign to function call\n"
+     ]
+    }
+   ],
+   "source": [
+    "bldcount=open('bloodtype1.txt')\n",
+    "content=bldcount.read()\n",
+    "\n",
+    "for bldcount.items():\n",
+    "    if count==1:\n",
+    "        print('There is one patient of bloodtype {bldcount}')\n",
+    "    elif count>1:\n",
+    "        print('There are {count}patients of blood type {bldcount}')\n",
+    "    else:\n",
+    "        print('There are no patients of blood type {bldcount}')\n",
+    "bldcount('bloodtype.txt')\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e13b0a1d",
+   "metadata": {},
+   "source": [
+    "# Q8"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "e8becf9f",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "unexpected indent (530809948.py, line 12)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[68], line 12\u001b[1;36m\u001b[0m\n\u001b[1;33m    print( usd_amount)\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mIndentationError\u001b[0m\u001b[1;31m:\u001b[0m unexpected indent\n"
+     ]
+    }
+   ],
+   "source": [
+    "def curconv(currency,amount):\n",
+    "    conv_rt={}\n",
+    "    for line in file:\n",
+    "        parts=line.split()\n",
+    "        if len(parts) >=2:\n",
+    "            code = parts[0]\n",
+    "            rate=float(parts[1])\n",
+    "            conv_rt[code]=rate\n",
+    "if currency in conv_rt:\n",
+    "    usd_amount = amount\n",
+    "conv_rt[currency]\n",
+    "     print( usd_amount)\n",
+    "result_eur=curconv('EUR',100)\n",
+    "result_jpy=curconv('JPY',100)\n",
+    "print(result_eur)\n",
+    "print(result_jpy)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "67378b2a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "curconv=open('currencies.txt')\n",
+    "content = curconv.read()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f4d2bbe0",
+   "metadata": {},
+   "source": [
+    "# Q9"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1443d193",
+   "metadata": {},
+   "source": [
+    "a = Type Error\n",
+    "b = Index Error\n",
+    "c = Value Error\n",
+    "d = Name Error(x not defined)\n",
+    "e = file not found"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c6121af8",
+   "metadata": {},
+   "source": [
+    "# Q10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "2313f161",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\n",
+      "[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def frequencies(text):\n",
+    "    letters='abcdefghijklmnopqrstuvwxyz'\n",
+    "    frequencies=[0]*26\n",
+    "    text=text.lower()\n",
+    "    for char in text:\n",
+    "        if char in letters:\n",
+    "            count = letters.count(char)\n",
+    "            frequencies[count] += 1\n",
+    "        return frequencies\n",
+    "print(frequencies('The quick red fox got bored and went home.'))\n",
+    "print(frequencies('apple'))"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
